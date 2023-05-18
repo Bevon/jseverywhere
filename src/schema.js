@@ -21,5 +21,7 @@ export const typeDefs = `#graphql
   }
   type Mutation {
     newNote(content:String!):Note!
+    deleteNote(id:ID!):Boolean!
+    updateNote(id:ID!, content:String!):Note!
   }
 `;
